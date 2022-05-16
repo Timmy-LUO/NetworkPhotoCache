@@ -1,0 +1,6 @@
+framework module Pods_NetworkPhotoCache {
+  umbrella header "Pods-NetworkPhotoCache-umbrella.h"
+
+  export *
+  module * { export * }
+}
