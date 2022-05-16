@@ -13,7 +13,7 @@ class ColorController: UIViewController {
     //MARK: - Properties
     private let colorView = ColorView()
     var colorDatas = [ColorData]()
-    
+    var onError: ((Error) -> Void)?
     
     //MARK: - Lifecycle
     override func loadView() {
@@ -25,6 +25,9 @@ class ColorController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         fetchData()
+        onError = { error in
+            self.alert(message: error.localizedDescription, title: "ERROR")
+        }
     }
     
     //MARK: - Setup CollectionView
@@ -38,18 +41,38 @@ class ColorController: UIViewController {
         let url: String = "https://jsonplaceholder.typicode.com/photos"
         AF.request(url).response { response in
             debugPrint("Status: \(String(describing: response.response?.statusCode))")
-            if let data = response.data {
-                print("data: \(data)")
-                do {
-                    let decoder = JSONDecoder()
-                    let colorDatas = try decoder.decode([ColorData].self, from: data)
-                    self.colorDatas = colorDatas
-                    self.colorView.colorCollectionView.reloadData()
-                } catch {
-                    print("\(error)")
-                }
+            if let error = response.error {
+                print("Response Error = \(error)")
+                self.onError?(error)
+                return
+            }
+            
+            guard let data = response.data else { return }
+            print("Data: \(data)")
+            do {
+                let decoder = JSONDecoder()
+                let colorDatas = try decoder.decode([ColorData].self, from: data) 
+                self.colorDatas = colorDatas
+                self.colorView.colorCollectionView.reloadData()
+            } catch {
+                print("Data Error: \(error)")
+                self.onError?(error)
             }
         }
+//        AF.request(url).response { response in
+//            debugPrint("Status: \(String(describing: response.response?.statusCode))")
+//            if let data = response.data {
+//                print("data: \(data)")
+//                do {
+//                    let decoder = JSONDecoder()
+//                    let colorDatas = try decoder.decode([ColorData].self, from: data)
+//                    self.colorDatas = colorDatas
+//                    self.colorView.colorCollectionView.reloadData()
+//                } catch {
+//                    print("\(error)")
+//                }
+//            }
+//        }
     }
 }
 
@@ -96,5 +119,15 @@ extension ColorController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 5
+    }
+}
+
+//MARK: - UIAlert
+extension UIViewController {
+    func alert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
