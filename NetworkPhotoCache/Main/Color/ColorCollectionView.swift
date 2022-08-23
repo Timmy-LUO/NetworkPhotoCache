@@ -64,8 +64,6 @@ extension ColorCollectionView: UICollectionViewDelegateFlowLayout {
         //(collectionView.邊界.寬 - 間距大小 * cell有幾幾個間距) / 想要幾個cell
         let width = (collectionView.bounds.width - 4 * 3) / 4
         let height = width
-        print("Width: \(width)")
-        print("Height: \(height)")
         return CGSize(width: width, height: height)
     }
 
