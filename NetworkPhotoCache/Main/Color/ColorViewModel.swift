@@ -11,10 +11,6 @@ import RxCocoa
 import RxSwift
 import RxRelay
 
-//protocol ColorViewModelDelegate: AnyObject {
-//    func reloadCollectionViewData()
-//}
-
 protocol ColorViewModelInputs {
     var viewDidLoad: PublishRelay<()> { get }
 }
@@ -74,39 +70,3 @@ final class ColorViewModel:
             .disposed(by: disposeBag)
     }
 }
-   
-//    weak var reloadDataDelegate: ColorViewModelDelegate?
-//
-////    private var colorData = [ColorData]()
-//    private var colorData: [ColorData] = {
-//        let colorData = [ColorData]()
-//        return colorData
-//    }()
-//
-//
-//    func getData() -> [ColorData] {
-//        return colorData
-//    }
-//
-//    func fetchNetworkData() {
-//        let url: String = "https://jsonplaceholder.typicode.com/photos"
-//        AF.request(url).response { response in
-//            debugPrint("Status: \(String(describing: response.response?.statusCode))")
-//            if let error = response.error {
-//                print("Response Error: \(error)")
-//                return
-//            }
-//
-//            guard let responseData = response.data else { return }
-//            print("Data: \(responseData)")
-//            do {
-//                let decoder = JSONDecoder()
-//                let colorDatas = try decoder.decode([ColorData].self, from: responseData)
-//                self.colorData = colorDatas
-//                self.reloadDataDelegate?.reloadCollectionViewData()
-//            } catch {
-//                print("Data Error: \(error)")
-//            }
-//        }
-//    }
-

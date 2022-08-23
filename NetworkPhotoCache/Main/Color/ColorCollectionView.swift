@@ -26,7 +26,6 @@ class ColorCollectionView: UICollectionView {
         register(ColorCollectionViewCell.self, forCellWithReuseIdentifier: ColorCollectionViewCell.identifier)
         backgroundColor = .backgroundColor
         dataSource = self
-        delegate = self
     }
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -56,11 +55,6 @@ extension ColorCollectionView: UICollectionViewDataSource {
         cell.bind(data: colorData[indexPath.row])
         return cell
     }
-}
-
-// MARK: - Delegate
-extension ColorCollectionView: UICollectionViewDelegate {
-    
 }
 
 // MARK: - DelegateFlowLayout

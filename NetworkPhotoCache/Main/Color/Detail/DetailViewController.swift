@@ -12,7 +12,7 @@ import Kingfisher
 class DetailViewController: UIViewController {
     // MARK: - Properties
     private let data: ColorData
-//    var colorDatas = [ColorData]()
+    
     
     // MARK: - UIs
     private let detailImageView: UIImageView = {
@@ -43,7 +43,7 @@ class DetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -82,5 +82,4 @@ class DetailViewController: UIViewController {
             make.trailing.equalTo(-10)
         }
     }
-    
 }
