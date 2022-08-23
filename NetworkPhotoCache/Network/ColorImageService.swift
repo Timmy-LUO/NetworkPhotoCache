@@ -36,27 +36,3 @@ class ColorImageService {
         }
     }
 }
-    
-//    func fetchData() {
-//        let url: String = "https://jsonplaceholder.typicode.com/photos"
-//        AF.request(url).response { response in
-//            debugPrint("Status: \(String(describing: response.response?.statusCode))")
-//            if let error = response.error {
-//                print("Response Error = \(error)")
-//                self.onError?(error)
-//                return
-//            }
-//
-//            guard let data = response.data else { return }
-//            print("Data: \(data)")
-//            do {
-//                let decoder = JSONDecoder()
-//                let colorDatas = try decoder.decode([ColorData].self, from: data)
-//                self.colorDatas = colorDatas
-//                self.collectionView.reloadData()
-//            } catch {
-//                print("Data Error: \(error)")
-//                self.onError?(error)
-//            }
-//        }
-//    }
