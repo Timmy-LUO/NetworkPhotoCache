@@ -8,6 +8,8 @@ target 'NetworkPhotoCache' do
   # Pods for NetworkPhotoCache
   pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire'
-  pod 'SwiftyJSON'
   pod 'Kingfisher'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxGesture'
 end

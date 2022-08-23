@@ -7,39 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		627522F92859AFC70054C2AE /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627522F82859AFC70054C2AE /* ColorViewModel.swift */; };
+		627522FB2859B17B0054C2AE /* ColorCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627522FA2859B17B0054C2AE /* ColorCollectionView.swift */; };
+		627522FE2859E15A0054C2AE /* ColorImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627522FD2859E15A0054C2AE /* ColorImageService.swift */; };
+		62897E8628B50ED400E467B0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62897E8528B50ED400E467B0 /* Color.swift */; };
 		629824022830FECD007753B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824012830FECD007753B3 /* AppDelegate.swift */; };
 		629824042830FECD007753B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824032830FECD007753B3 /* SceneDelegate.swift */; };
-		629824062830FECD007753B3 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824052830FECD007753B3 /* MainController.swift */; };
+		629824062830FECD007753B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824052830FECD007753B3 /* MainViewController.swift */; };
 		6298240C2830FECD007753B3 /* NetworkPhotoCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6298240A2830FECD007753B3 /* NetworkPhotoCache.xcdatamodeld */; };
 		6298240E2830FECD007753B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6298240D2830FECD007753B3 /* Assets.xcassets */; };
 		629824112830FECD007753B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6298240F2830FECD007753B3 /* LaunchScreen.storyboard */; };
-		6298241D28310064007753B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298241C28310064007753B3 /* Model.swift */; };
-		62982420283100E3007753B3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298241F283100E3007753B3 /* MainView.swift */; };
-		629824222831042E007753B3 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824212831042E007753B3 /* ColorController.swift */; };
-		6298242528310456007753B3 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298242428310456007753B3 /* ColorView.swift */; };
+		6298241D28310064007753B3 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298241C28310064007753B3 /* ColorData.swift */; };
+		629824222831042E007753B3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629824212831042E007753B3 /* ColorViewController.swift */; };
 		6298242728310553007753B3 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298242628310553007753B3 /* ColorCollectionViewCell.swift */; };
-		6298242B283120E6007753B3 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298242A283120E6007753B3 /* DetailController.swift */; };
-		6298242D283120F8007753B3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298242C283120F8007753B3 /* DetailView.swift */; };
+		6298242B283120E6007753B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298242A283120E6007753B3 /* DetailViewController.swift */; };
 		C30AD58D24FA2704BB61474E /* Pods_NetworkPhotoCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0988760AD3C79FCDB3C542 /* Pods_NetworkPhotoCache.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44694B72EB1E1DFED8B40607 /* Pods-NetworkPhotoCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPhotoCache.debug.xcconfig"; path = "Target Support Files/Pods-NetworkPhotoCache/Pods-NetworkPhotoCache.debug.xcconfig"; sourceTree = "<group>"; };
+		627522F82859AFC70054C2AE /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
+		627522FA2859B17B0054C2AE /* ColorCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionView.swift; sourceTree = "<group>"; };
+		627522FD2859E15A0054C2AE /* ColorImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorImageService.swift; sourceTree = "<group>"; };
+		62897E8528B50ED400E467B0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		629823FE2830FECD007753B3 /* NetworkPhotoCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPhotoCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629824012830FECD007753B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		629824032830FECD007753B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		629824052830FECD007753B3 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		629824052830FECD007753B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6298240B2830FECD007753B3 /* NetworkPhotoCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkPhotoCache.xcdatamodel; sourceTree = "<group>"; };
 		6298240D2830FECD007753B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		629824102830FECD007753B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		629824122830FECD007753B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6298241C28310064007753B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		6298241F283100E3007753B3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		629824212831042E007753B3 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
-		6298242428310456007753B3 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		6298241C28310064007753B3 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
+		629824212831042E007753B3 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		6298242628310553007753B3 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
-		6298242A283120E6007753B3 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		6298242C283120F8007753B3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6298242A283120E6007753B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C0988760AD3C79FCDB3C542 /* Pods_NetworkPhotoCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPhotoCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69FB56FF49E2A531C7C7C5E /* Pods-NetworkPhotoCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPhotoCache.release.xcconfig"; path = "Target Support Files/Pods-NetworkPhotoCache/Pods-NetworkPhotoCache.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		627522FC2859E11E0054C2AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				627522FD2859E15A0054C2AE /* ColorImageService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		62897E8428B50EB700E467B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				62897E8528B50ED400E467B0 /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		629823F52830FECD007753B3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				629824182830FF15007753B3 /* App */,
+				627522FC2859E11E0054C2AE /* Network */,
 				629824192831001D007753B3 /* Model */,
-				6298241A28310033007753B3 /* MainController */,
+				62897E8428B50EB700E467B0 /* Extension */,
+				6298241A28310033007753B3 /* Main */,
 				6298240D2830FECD007753B3 /* Assets.xcassets */,
 				6298240F2830FECD007753B3 /* LaunchScreen.storyboard */,
 				629824122830FECD007753B3 /* Info.plist */,
@@ -100,63 +120,38 @@
 		629824192831001D007753B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6298241C28310064007753B3 /* Model.swift */,
+				6298241C28310064007753B3 /* ColorData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6298241A28310033007753B3 /* MainController */ = {
+		6298241A28310033007753B3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				629824052830FECD007753B3 /* MainController.swift */,
-				6298241E283100CC007753B3 /* MainView */,
-				6298241B28310045007753B3 /* ColorController */,
+				629824052830FECD007753B3 /* MainViewController.swift */,
+				6298241B28310045007753B3 /* Color */,
 			);
-			path = MainController;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		6298241B28310045007753B3 /* ColorController */ = {
+		6298241B28310045007753B3 /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				629824212831042E007753B3 /* ColorController.swift */,
-				6298242328310446007753B3 /* ColorView */,
-				62982429283120A9007753B3 /* DetailController */,
-			);
-			path = ColorController;
-			sourceTree = "<group>";
-		};
-		6298241E283100CC007753B3 /* MainView */ = {
-			isa = PBXGroup;
-			children = (
-				6298241F283100E3007753B3 /* MainView.swift */,
-			);
-			path = MainView;
-			sourceTree = "<group>";
-		};
-		6298242328310446007753B3 /* ColorView */ = {
-			isa = PBXGroup;
-			children = (
-				6298242428310456007753B3 /* ColorView.swift */,
+				627522F82859AFC70054C2AE /* ColorViewModel.swift */,
+				629824212831042E007753B3 /* ColorViewController.swift */,
+				627522FA2859B17B0054C2AE /* ColorCollectionView.swift */,
 				6298242628310553007753B3 /* ColorCollectionViewCell.swift */,
+				62982429283120A9007753B3 /* Detail */,
 			);
-			path = ColorView;
+			path = Color;
 			sourceTree = "<group>";
 		};
-		62982429283120A9007753B3 /* DetailController */ = {
+		62982429283120A9007753B3 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				6298242A283120E6007753B3 /* DetailController.swift */,
-				6298242E283120FB007753B3 /* DetailView */,
+				6298242A283120E6007753B3 /* DetailViewController.swift */,
 			);
-			path = DetailController;
-			sourceTree = "<group>";
-		};
-		6298242E283120FB007753B3 /* DetailView */ = {
-			isa = PBXGroup;
-			children = (
-				6298242C283120F8007753B3 /* DetailView.swift */,
-			);
-			path = DetailView;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		71FBF99E6F0E5432D29FA639 /* Frameworks */ = {
@@ -290,16 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6298241D28310064007753B3 /* Model.swift in Sources */,
-				62982420283100E3007753B3 /* MainView.swift in Sources */,
-				629824062830FECD007753B3 /* MainController.swift in Sources */,
+				6298241D28310064007753B3 /* ColorData.swift in Sources */,
+				629824062830FECD007753B3 /* MainViewController.swift in Sources */,
 				629824022830FECD007753B3 /* AppDelegate.swift in Sources */,
-				6298242528310456007753B3 /* ColorView.swift in Sources */,
-				6298242D283120F8007753B3 /* DetailView.swift in Sources */,
-				629824222831042E007753B3 /* ColorController.swift in Sources */,
+				627522FE2859E15A0054C2AE /* ColorImageService.swift in Sources */,
+				62897E8628B50ED400E467B0 /* Color.swift in Sources */,
+				629824222831042E007753B3 /* ColorViewController.swift in Sources */,
 				6298242728310553007753B3 /* ColorCollectionViewCell.swift in Sources */,
 				6298240C2830FECD007753B3 /* NetworkPhotoCache.xcdatamodeld in Sources */,
-				6298242B283120E6007753B3 /* DetailController.swift in Sources */,
+				6298242B283120E6007753B3 /* DetailViewController.swift in Sources */,
+				627522FB2859B17B0054C2AE /* ColorCollectionView.swift in Sources */,
+				627522F92859AFC70054C2AE /* ColorViewModel.swift in Sources */,
 				629824042830FECD007753B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
