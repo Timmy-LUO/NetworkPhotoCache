@@ -26,6 +26,7 @@ class ColorCollectionView: UICollectionView {
         register(ColorCollectionViewCell.self, forCellWithReuseIdentifier: ColorCollectionViewCell.identifier)
         backgroundColor = .backgroundColor
         dataSource = self
+        delegate = self
     }
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -61,16 +62,18 @@ extension ColorCollectionView: UICollectionViewDataSource {
 extension ColorCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //(collectionView.邊界.寬 - 間距大小 * cell有幾幾個間距) / 想要幾個cell
-        let width = (collectionView.bounds.width - 5 * 3) / 4
+        let width = (collectionView.bounds.width - 4 * 3) / 4
         let height = width
+        print("Width: \(width)")
+        print("Height: \(height)")
         return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 4
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 4
     }
 }
